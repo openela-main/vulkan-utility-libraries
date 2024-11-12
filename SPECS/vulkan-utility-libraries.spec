@@ -1,8 +1,8 @@
 %global debug_package %{nil}
 
 Name:           vulkan-utility-libraries
-Version:        1.3.268.0
-Release:        4%{?dist}
+Version:        1.3.283.0
+Release:        1%{?dist}
 Summary:        Vulkan utility libraries
 
 License:        Apache-2.0
@@ -48,8 +48,12 @@ Provides:       vulkan-validation-layers-devel%{?_isa} = %{version}-%{release}
 %{_includedir}/vulkan/
 %{_libdir}/cmake/VulkanUtilityLibraries/*.cmake
 %{_libdir}/libVulkanLayerSettings.a
+%{_libdir}/libVulkanSafeStruct.a
 
 %changelog
+* Tue May 28 2024 José Expósito <jexposit@redhat.com> - 1.3.283.0-1
+- Update to 1.3.283.0 SDK
+
 * Wed Jan 24 2024 José Expósito <jexposit@redhat.com> - 1.3.268.0-4
 - Move Provides and Obsoletes to the devel package section
 
