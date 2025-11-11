@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 
 Name:           vulkan-utility-libraries
-Version:        1.4.304.0
+Version:        1.4.313.0
 Release:        1%{?dist}
 Summary:        Vulkan utility libraries
 
@@ -51,6 +51,9 @@ Provides:       vulkan-validation-layers-devel%{?_isa} = %{version}-%{release}
 %{_libdir}/libVulkanSafeStruct.a
 
 %changelog
+* Mon June 26 2025 Anusha Srivatsa <asrivats@redhat.com> - 1.4.313.0-1
+- Update to 1.4.313.0 SDK
+
 * Mon Jan 20 2025 José Expósito <jexposit@redhat.com> - 1.4.304.0-1
 - Update to 1.4.304.0 SDK
 
